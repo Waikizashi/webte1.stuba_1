@@ -1,0 +1,142 @@
+
+.menu{
+    width: 100%;
+    position: -webkit-sticky;
+    margin: 0 0 0 0;
+    background: #065c89;
+    display: flex;
+    transition: 0.4s;
+    border-top: 4px solid snow;
+    border-bottom: 4px solid snow;
+}
+
+.menu .menu_list{
+    display: -webkit-inline-flex;
+    width: 100%;
+    height: 100%;
+    color: snow;
+    transition: 0.4s;
+    justify-content: center;
+
+}
+
+.menu_list li{
+    vertical-align: middle;
+    line-height: 100%;
+    text-align: center;
+    border-radius: 10px;
+    border-left: 4px solid rgba(255, 250, 250, 0);
+    border-right: 4px solid rgba(255, 250, 250, 0);
+    transition: 0.4s;
+    text-transform: uppercase;
+    list-style-type: none;
+
+}
+.menu_list li a{
+    line-height: normal;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 1rem 1rem 1rem 1rem;
+    color: snow;
+    transition: 0.1s;
+    text-decoration: none;
+}
+.menu_list li a:hover{
+    transform: scale(1.1);
+}
+
+.menu_list li:hover{
+    text-shadow: 1px 1px 2px #000000, 0 0 1em snow;
+    border-left: 4px solid snow;
+    border-right: 4px solid snow;
+    border-radius: 15px;
+    box-shadow: 0 0 1em #d7d7d7;
+}
+
+.menu_list li:active{
+    box-shadow: 0 0 2rem 1em #ffffff;
+}
+
+.logo{
+    margin: 1.5rem 0 1rem 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.menu_btn{
+    display: none;
+}
+
+@media (max-width: 900px) {
+
+    .menu .menu_list{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        height: 100%;
+        color: snow;
+        justify-content: center;
+        transition: 0.4s;
+    }
+    .logo{
+        display: none;
+    }
+    .menu_btn{
+        /*transform-origin: center;*/
+        /*transform: rotate(0deg);*/
+        display: block;
+        padding: 1rem;
+        width: 6%;
+        height: 6%;
+        transition: 0.3s;
+    }
+    .menu_btn_active{
+        /*transform: rotate(90deg);*/
+    }
+
+    .menu_btn:hover{
+        transform: scale(1.1);
+    }
+
+    .menu_btn > hr{
+        border: snow solid 2px;
+    }
+
+    .l1,.l2,.l3{
+        transition: all 0.2s ease-in-out;
+    }
+
+    .l1_active{
+        margin-top: 20px;
+        transform: rotate(-45deg);
+        margin-bottom: -12px;
+    }
+
+    .l2_active{
+        opacity: 0;
+    }
+
+    .l3_active{
+        margin-top: -12px;
+        transform: rotate(45deg);
+    }
+
+    .menu_btn > .hr_active{
+        box-shadow: 0 0 5px #000000, 0 0 4rem 0.5rem #ffffff;
+    }
+
+    .menu .menu_list_close{
+        display: none;
+        transition: 0.4s;
+    }
+    .menu > li,a{
+        transition: none;
+    }
+
+}
+
+@media (max-width: 310px) {
+    .menu_list li a{
+        font-size: 6pt;
+    }
+}

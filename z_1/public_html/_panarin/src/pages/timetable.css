@@ -1,0 +1,129 @@
+html{
+    height: 100%;
+}
+
+.ttl{
+    font-size: 32pt;
+    color: #ff7700;
+    text-shadow: 1px 1px 2px #000000, 0 0 1em snow;
+}
+
+.wrap{
+    margin: 0;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.gsect{
+    display: flex;
+    overflow-x: auto;
+    padding: 0;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 10px auto;
+    background-color: snow;
+    min-height: 70%;
+    width: 98%;
+    background-color: rgba(255, 250, 250, 0.7);
+    box-shadow: 0 0 1em #000000;
+}
+
+
+#timetable a{
+    display: flex;
+    color: black;
+    text-decoration: none;
+}
+
+#timetable a:hover{
+    color: white;
+}
+
+#timetable a:active{
+    color: white;
+}
+
+#timetable p{
+    color: snow;
+    margin: 0.1rem;
+    text-align: center;
+}
+
+#timetable{
+    text-align: center;
+    width: 95%;
+    margin: auto 10% 10% 10%;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}
+
+span{
+    font-size: 25px;
+    margin-right: -1px;
+}
+
+table{
+    background-color: #bac8d4;
+    border-radius: 5px;
+    border: 3px solid #222d5f;
+    box-shadow: 0 0 2em #2d4bb6;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+tr:nth-child(even){
+    background-color: rgba(57, 101, 111, 0.51);
+}
+tr:nth-child(odd){
+    background-color: #3e847e;
+}
+
+tr:nth-child(1){
+    font-weight: normal;
+    color: white;
+    background-color: #056179;
+}
+
+tr, td, th{
+    border: 1px solid #000e6a;
+    padding: 3px;
+}
+
+
+.no-border{
+    border: 0;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 200px;
+}
+
+.empty-cell{
+    border: 0;
+}
+
+.day-cell{
+    font-weight: normal;
+    color: white;
+    background-color: #056179;
+}
+
+.prednaska{
+    background-color: rgb(96, 163, 96);
+}
+
+.cvicenie{
+    background-color: rgb(102,153,204);
+}
+
+.tk{
+    background-color: rgb(109, 102, 204);
+}
+

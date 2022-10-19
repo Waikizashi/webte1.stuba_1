@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../font.css">
+    <link rel="stylesheet" href="./timetable.css">
+    <link rel="stylesheet" href="../modules/menu.css">
+    <link rel="stylesheet" href="../../head.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable</title>
+</head>
+
+    <body class="wrap">
+    <img alt="bgr" src="../../src/img/2.jpg" class="bgr">
+    <header>
+        <h1>Timetable</h1>
+        <div class="menu">
+            <img alt="logo" src="../../src/img/logo.png" class="logo">
+            <input id="toggle" class="toggle" type="checkbox">
+            <label for="toggle" class="menu_btn">
+                <span class="l1"></span>
+                <span class="l2"></span>
+                <span class="l3"></span>
+            </label>
+            <ul class="menu_list">
+                <li><a href="../../index.html">O mne</a></li>
+                <li><a href="./cv.html">Životopis</a></li>
+                <li><a href="./timetable.html">Môj rozvrh</a></li>
+                <li><a href="./media.html">Interaktı́vny obrázok</a></li>
+            </ul>
+        </div>
+    </header>
+        <div class="wrapper gsect">
+
+            <div id="timetable">
+                <h2 class="ttl">Môj rozvrh</h2>
+                <table>
+                    <tr>
+                        <th><span>Day\Time</span></th>
+                        <th>7:00-7:50</th>
+                        <th>8:00-8:50</th>
+                        <th>9:00-9:50</th>
+                        <th>10:00-10:50</th>
+                        <th>11:00-11:50</th>
+                        <th>12:00-12:50</th>
+                        <th>13:00-13:50</th>
+                        <th>14:00-14:50</th>
+                        <th>15:00-15:50</th>
+                        <th>16:00-16:50</th>
+                        <th>17:00-17:50</th>
+                        <th>18:00-18:50</th>
+<!--                        <th class="day-cell">19:00-19:50</th>-->
+<!--                        <th class="day-cell">20:00-20:50</th>-->
+<!--                        <th class="day-cell">21:00-21:50</th>-->
+                    </tr>
+                    <tr>
+                        <td class="day-cell">Pondelok</td>
+                        <td class="empty-cell" colspan="12"></td>
+                    </tr>
+                    <tr>
+                        <td class="day-cell">Utorok</td>
+                        <td class="empty-cell" colspan="1"></td>
+                        <td class="cvicenie" colspan="2"><p>AB300</p><p>AZA</p><p>M. Bečka</p></td>
+                        <td class="prednaska" colspan="2"><p>AB300</p><p>OS</p><p>M. Jókay</p></td>
+                        <td class="empty-cell" colspan="1"> </td>
+                        <td class="prednaska" colspan="2"><p>AB300</p><p>SWI</p><p>M. Šrámka</p></td>
+                        <td class="prednaska" colspan="2"><p>CD300</p><p>WEB1</p><p>K. Žáková</p></td>
+                        <td class="empty-cell" colspan="2"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="day-cell">Streda</td>
+                        <td class="empty-cell" colspan="2"> </td>
+                        <td class="cvicenie" colspan="1"><p>ab300</p><p>AZA</p><p>M. Bečka</p></td>
+                        <td class="prednaska" colspan="2"><p>ab300</p><p>OS</p><p>M. Jókay</p></td>
+                        <td class="empty-cell" colspan="1"> </td>
+                        <td class="prednaska" colspan="2"><p>ab300</p><p>SWI</p><p>M. Šrámka</p></td>
+                        <td class="prednaska" colspan="2"><p>cd300</p><p>WEB1</p><p>K. Žáková</p></td>
+                        <td class="empty-cell" colspan="2"> </td>
+                    </tr>
+
+                    <tr>
+                        <td class="day-cell">Štvrtok</td>
+                        <td class="empty-cell" colspan="1"> </td>
+                        <td class="cvicenie" colspan="2"><p>bu01</p><p>PS</p><p>M. Petriska</p></td>
+                        <td class="cvicenie" colspan="1"><p>c117b</p><p>SWI</p><p>K. Žáková</p></td>
+                        <td class="empty-cell" colspan="1"> </td>
+                        <td class="prednaska" colspan="1"><p>cd300</p><p>OS</p><p>M. Jókay</p></td>
+                        <td class="prednaska" colspan="2"><p>bc300</p><p>PS</p><p>R. Vargic</p></td>
+                        <td class="empty-cell" colspan="1"> </td>
+                        <td class="cvicenie" colspan="2"><p>cpu-a</p><p>WEB1</p><p>J. Matišák</p></td>
+                        <td class="empty-cell" colspan="1"> </td>
+                    </tr>
+                    <tr>
+                        <td class="day-cell"></td>
+                        <td class="empty-cell" colspan="6"> </td>
+                        <td class="cvicenie" colspan="1"><p>AB300</p><p>OS</p><p>M. Jókay</p></td>
+                        <td class="empty-cell" colspan="5"> </td>
+                    </tr>
+
+                    <tr>
+                        <td class="day-cell">Piatok</td>
+                        <td class="empty-cell" colspan="2"> </td>
+                        <td class="tk" colspan="2"><p>telocvic</p><p>TK5</p><p>K. Hižnayová</p></td>
+                        <td class="empty-cell" colspan="1"> </td>
+                        <td class="cvicenie" colspan="1"><p>BC150</p><p>AZA</p><p>M. Bečka</p></td>
+                        <td class="cvicenie" colspan="2"><p>B704</p><p>MASTA</p><p>D. Pancza</p></td>
+                        <td class="empty-cell" colspan="4"> </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    <footer style="
+    padding: 5px;
+    background-color: #065c89;
+    text-align: center;
+    color: white;
+    font-size: 14px;">
+
+        <p style="
+    margin: auto;
+    text-shadow: 0 0 5px white;">
+            Evgenii Panarin, &copy; 2022 October...</p>
+    </footer>
+    </body>
+</html>
